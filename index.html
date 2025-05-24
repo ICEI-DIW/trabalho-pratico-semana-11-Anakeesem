@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amor em Camadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="d-flex align-items-center p-3 gap-4">
+        <img src="logo-amor-em-camadas.png.png" alt="Amor em Camadas" style="max-width: 120px; height: auto;">
+
+        <nav>
+            <ul class="menu-navegacao d-flex gap-4 list-unstyled mb-0">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="detalhes.html?id=${receita.id}">Receitas</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div
+            class="barradepesquisa d-flex flex-column flex-md-row justify-content-center align-items-center mb-4 gap-2">
+            <input type="text" class="barra-pesquisa form-control w-100 w-md-50" placeholder="Buscar receitas..." />
+            <button class="botaobuscar btn btn-primary">Buscar</button>
+        </div>
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Itens em Destaque</h2>
+            <div id="carouselDestaque" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="bolo caseiro.jpeg.JPG" class="d-block w-100" alt="Bolo Caseiro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolo Caseiro</h5>
+                            <p>Um clássico que nunca sai de moda!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="banoffee.jpg" class="d-block w-100" alt="Bolo Banoffee">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolo Banoffee</h5>
+                            <p>Uma explosão de sabor em cada fatia!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bolo-mousse-de-leite-em-p.jpg" class="d-block w-100" alt="Bolo de Leite em Pó">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolo de Leite em Pó</h5>
+                            <p>Delicioso para comemorações!</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="bolo-creme-de-pacoca-52395.jpg" class="d-block w-100" alt="Bolo Paçoca">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Bolo Paçoca</h5>
+                            <p>O sabor da festa junina o ano todo!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="cards-blocos row justify-content-center">
+        </section>
+
+        <section class="formulario text-center my-5">
+            <h2 class="mb-3">Cadastre-se para receber novidades:</h2>
+            <form class="d-flex flex-column align-items-center gap-2">
+                <input type="text" class="form-control w-100 w-md-50" placeholder="Seu nome" required />
+                <input type="email" class="form-control w-100 w-md-50" placeholder="Seu e-mail" required />
+                <button type="submit" class="botaoinscrever btn-success">Inscrever</button>
+            </form>
+        </section>
+        <section class="sobre-autor my-5">
+            <h2 class="text-center mb-4">Sobre o Criador do Site</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 text-center">
+                    <img src="ana.jpg" alt="Foto do Aluno" class="img-fluid rounded-circle" style="max-width: 200px;">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">
+                        Olá, sou <strong>Ana Clara Amaral</strong>, aluno da instituição <strong>Puc Minas</strong> e fui responsável pela criação deste site como parte do meu projeto de <strong>Curso de Desenvolvimento Web</strong>. O objetivo deste site é compartilhar receitas deliciosas e promover o amor pela culinária.
+                    </p>
+                    <p class="lead">
+                        Se você quiser saber mais sobre mim, não hesite em entrar em contato através do meu e-mail <a href="mailto:seuemail@dominio.com">anakeesem@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
