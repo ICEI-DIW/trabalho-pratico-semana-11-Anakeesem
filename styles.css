@@ -239,7 +239,7 @@ p {
 
 @media (max-width: 768px) {
     .card-bolo img {
-        max-width: 100%;
+        max-width: 50%;
     }
 
     .formulario input,
@@ -278,4 +278,19 @@ p {
 .sobre-autor .lead {
     font-size: 1.2rem;
     color: #DC143C;;
+}
+
+#detalhes-container img {
+    max-width: 500px;
+    height: auto;    
+    display: block;   
+    margin: 20px auto; 
+    border-radius: 8px; 
+    border: 2px solid #DC143C; 
+}
+
+
+.col-md-6 img {
+    max-width: 100%; 
+    height: auto;
 }
